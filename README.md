@@ -28,20 +28,6 @@ This isn't a collection of isolated notebooks — each day builds toward a share
 
 ## 🗓️ 7-Day Architecture Plan
 
-```mermaid
-flowchart TD
-    D1["Day 1<br/>Data Pipelines & Feature Selection<br/>ColumnTransformer + variance thresholding"]
-    D2["Day 2<br/>Regularized Regression & Diagnostics<br/>L1 / L2 penalties, residual analysis"]
-    D3["Day 3<br/>Classification Margins & Calibration<br/>Linear vs non-linear boundaries, loss optimization"]
-    D4["Day 4<br/>Tree Ensembles & Bayesian Tuning<br/>LightGBM / XGBoost + Optuna"]
-    D5["Day 5<br/>Validation & Explainability<br/>Out-of-fold checks, SHAP waterfalls"]
-    D6["Day 6<br/>Clustering & Dimensionality Reduction<br/>PCA / UMAP, density-based clustering"]
-    D7["Day 7<br/>Anomaly Detection & Serialization<br/>Covariate shift tracking, ONNX export"]
-    CAP["🚀 Capstone<br/>Scalable inference pipeline on raw data"]
-
-    D1 --> D2 --> D3 --> D4 --> D5 --> D6 --> D7 --> CAP
-```
-
 ### Core Sprint (Days 1–4)
 
 | Day | Focus | Key Techniques |
@@ -65,45 +51,10 @@ flowchart TD
 
 Once the 7-day sprint wraps, every module gets integrated into a single **Capstone Project** — packaging the optimized classical models into a scalable inference pipeline that handles raw, messy data streams the way a live production system would.
 
-```mermaid
-flowchart LR
-    A[Raw / Messy Data] --> B[Validated Pipeline<br/>Days 1-4 modules]
-    B --> C[Explainability + Monitoring<br/>Days 5-7 modules]
-    C --> D[Serialized Model<br/>ONNX / Joblib]
-    D --> E[FastAPI Inference Service]
-```
-
----
-
-## ⏭️ Future Roadmap
+# ⏭️ Future Roadmap
 
 After this repo's classical ML capstone is validated, the same standards — rigorous validation, data hygiene, modular pipelines — carry over into a new repository focused entirely on **Deep Learning and custom neural network architectures**.
 
-| Stage | Repository | Status |
-|---|---|---|
-| 1 | Credit Risk Scorer & AI Advisor | ✅ Complete |
-| 2 | Classical ML Mastery Sprint (this repo) | 🚧 In Progress |
-| 3 | Deep Learning & Custom Architectures | ⏳ Planned |
-
----
-
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 `scikit-learn` · `LightGBM` · `XGBoost` · `Optuna` · `SHAP` · `UMAP` · `ONNX` · `FastAPI` · `Pydantic`
-
----
-
-## 📂 Repository Structure
-
-```
-.
-├── day1_pipelines_feature_selection/
-├── day2_regularized_regression/
-├── day3_classification_calibration/
-├── day4_tree_ensembles_optuna/
-├── day5_validation_explainability/
-├── day6_clustering_dim_reduction/
-├── day7_anomaly_detection_serialization/
-├── capstone/
-└── README.md
-```
