@@ -47,14 +47,6 @@ This isn't a collection of isolated notebooks — each day builds toward a share
 
 ---
 
-## 🚀 Capstone Implementation
-
-Once the 7-day sprint wraps, every module gets integrated into a single **Capstone Project** — packaging the optimized classical models into a scalable inference pipeline that handles raw, messy data streams the way a live production system would.
-
-# ⏭️ Future Roadmap
-
-After this repo's classical ML capstone is validated, the same standards — rigorous validation, data hygiene, modular pipelines — carry over into a new repository focused entirely on **Deep Learning and custom neural network architectures**.
-
 # 🛠️ Tech Stack
 
 `scikit-learn` · `LightGBM` · `XGBoost` · `Optuna` · `SHAP` · `UMAP` · `ONNX` · `FastAPI` · `Pydantic`
